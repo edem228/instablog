@@ -1,0 +1,12 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}BlogBundle:Post:new{% endblock %}
+
+{% block body %}
+    <h1>Post creation</h1>
+
+    {{ form_start(form) }}
+    {% include 'BlogBundle:Post:_form.html.twig' %}
+    <input type="submit" value="Créer" class="btn btn-primary" />
+    {{ form_end(form) }}
+{% endblock %}

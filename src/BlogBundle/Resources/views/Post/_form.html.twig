@@ -1,0 +1,20 @@
+<div class="form-group">
+    <label for="">Titre</label>
+    {{ form_errors(form.title, {'attr': {'class':'error dsqd sqd sqd sqd'}}) }}
+    {{ form_widget(form.title, {'attr': {'class':'form-control'}}) }}
+</div>
+<div class="form-group">
+    <label for="">Content</label>
+    {{ form_errors(form.content, {'attr': {'class':'error dsqd sqd sqd sqd'}}) }}
+    {{ form_widget(form.content, {'attr': {'class':'form-control'}}) }}
+</div>
+<div class="form-group">
+    <label for="">Public</label>
+    {{ form_errors(form.isPublic, {'attr': {'class':'error dsqd sqd sqd sqd'}}) }}
+    {{ form_widget(form.isPublic, {'attr': {'class':'checkbox'}}) }}
+</div>
+<div class="form-group">
+    <label for="">Tags</label>
+    {{ form_errors(form.tags, {'attr': {'class':'error dsqd sqd sqd sqd'}}) }}
+    {{ form_widget(form.tags, {'attr': {'class':'form-control'}}) }}
+</div>

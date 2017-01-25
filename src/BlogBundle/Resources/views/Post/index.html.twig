@@ -1,0 +1,13 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}BlogBundle:Post:edit{% endblock %}
+
+{% block body %}
+    <h1>Tous les articles</h1>
+    {% for post in posts %}
+        {{ post.title }}
+        {{ post.content }}
+        {{ post.tags }}
+    {% endfor %}
+
+{% endblock %}
